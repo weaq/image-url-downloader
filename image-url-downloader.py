@@ -1,4 +1,3 @@
-
 import requests
 
 # Read txt url from file
@@ -6,10 +5,10 @@ file = open('url.txt', 'r')
 # Read line to list
 lines = file.readlines()
 
-for i in range(len(lines)) :
+for idx, value in enumerate(lines) :
 
-    line = lines[i].rstrip()
-    print('Line ' + str(i) + ' : ' + line)
+    line = value.rstrip()
+    print('Line ' + str(idx) + ' : ' + line)
 
     # Remove any leading and trailing whitespaces include
     url = line.strip()
