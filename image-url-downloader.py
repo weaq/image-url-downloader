@@ -6,7 +6,7 @@ file = open('url.txt', 'r')
 lines = file.readlines()
 
 for idx, value in enumerate(lines) :
-
+    # Remove trailing newline
     line = value.rstrip()
     print('Line ' + str(idx) + ' : ' + line)
 
